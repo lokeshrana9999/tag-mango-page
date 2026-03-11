@@ -1,0 +1,99 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+
+
+
+  .current-day-sidebar-outer-layer-top {
+    position: absolute;
+    top: -21px;
+    right: -15px;
+    bottom: -15px;
+    width: 30px;
+    height: 60px;
+    background: radial-gradient(circle at top left, transparent 15px, #f7f6fc calc(15px + 1px));
+    z-index: 0;
+  }
+
+  .current-day-sidebar-outer-layer-bottom {
+    position: absolute;
+    bottom: -21px;
+    right: -15px;
+    width: 30px;
+    height: 60px;
+    background: radial-gradient(circle at bottom left, transparent 15px, #f7f6fc calc(15px + 1px));
+    z-index: 0;
+  }
+
+
+  .current-day-sidebar-outer-layer-top-dark {
+    background: radial-gradient(circle at top left, transparent 15px, #000 calc(15px + 1px));
+  }
+
+  .current-day-sidebar-outer-layer-bottom-dark {
+    background: radial-gradient(circle at bottom left, transparent 15px, #000 calc(15px + 1px));
+  }
+
+
+  .reaction-buttons-wrapper {
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .reaction-buttons-wrapper:hover {
+  transform: scale(1.2);
+  }
+
+
+  .sidebar-background-image-dark {
+    /* filter: blur(15px) brightness(0.4); */
+  }
+
+
+  /*
+    DayTopBar concave corner decorators.
+    Sidebar equivalent: current-day-sidebar-outer-layer-top/bottom sit on the RIGHT side
+    of the active item (vertical tab opening right).
+    Top bar equivalent: these sit on the TOP-LEFT and TOP-RIGHT of the active item
+    (horizontal tab opening upward). Dimensions are transposed (width/height swapped)
+    and the radial-gradient anchor corner is rotated to match.
+  */
+
+  .current-day-topbar-outer-layer-left {
+    position: absolute;
+    bottom: -19px;
+    left: -15px;
+    width: 60px;
+    height: 30px;
+    background: radial-gradient(circle at top left, transparent 15px, #f7f6fc calc(15px + 1px));
+    z-index: 0;
+  }
+
+  .current-day-topbar-outer-layer-right {
+    position: absolute;
+    bottom: -19px;
+    right: -15px;
+    width: 60px;
+    height: 30px;
+    background: radial-gradient(circle at top right, transparent 15px, #f7f6fc calc(15px + 1px));
+    z-index: 0;
+  }
+
+  .current-day-topbar-outer-layer-left-dark {
+    background: radial-gradient(circle at top left, transparent 15px, #000 calc(15px + 1px));
+  }
+
+  .current-day-topbar-outer-layer-right-dark {
+    background: radial-gradient(circle at top right, transparent 15px, #000 calc(15px + 1px));
+  }
+
+
+  /* Hide scrollbar without disabling scroll */
+  .topbar-no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topbar-no-scrollbar {
+    scrollbar-width: none;
+  }
+
